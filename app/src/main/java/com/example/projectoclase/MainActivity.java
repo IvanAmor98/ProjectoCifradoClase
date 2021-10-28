@@ -28,16 +28,42 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.tableMayus).setVisibility(View.INVISIBLE);
             return true;
         });
+        findViewById(R.id.erase).setOnClickListener(v -> {
+            TextView input = findViewById(R.id.input);
+            CharSequence value = input.getText();
+            value = value.subSequence(0, value.length() - 1);
+            input.setText(value);
+        });
+        findViewById(R.id.erase).setOnLongClickListener(v -> {
+            ((TextView)findViewById(R.id.input)).setText("");
+            return true;
+        });
     }
 
     private void encrypt() {
+        char[] minus = "abcdefghijklmnñopqrstuvwxyz".toCharArray();
+        char[] mayus = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".toCharArray();
         String input = (String) ((TextView) findViewById(R.id.input)).getText();
         String output = "";
         int cryptKey = Integer.parseInt(((Spinner) findViewById(R.id.encryptOption)).getSelectedItem().toString());
         for (char c: input.toCharArray()) {
-            output += (char) (c + cryptKey);
+            if (c <= 90 || c == 165) {
+                output += getChar(mayus, c ,cryptKey);
+            } else {
+                output += getChar(minus, c ,cryptKey);
+            }
         }
         ((TextView) findViewById(R.id.output)).setText(output);
+    }
+
+    private char getChar(char[] chars, char c, int cryptKey) {
+        for (int i = 0; i < chars.length; i++) {
+            if (c == chars[i]) {
+                int index = i + cryptKey >= chars.length ? i + cryptKey - chars.length : i + cryptKey;
+                return (char) (chars[index]);
+            }
+        }
+        return ' ';
     }
 
     private void setButtonListener(TableLayout table) {
