@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonMayus).setOnClickListener(v -> {
             findViewById(R.id.tableMinus).setVisibility(View.INVISIBLE);
             findViewById(R.id.tableMayus).setVisibility(View.VISIBLE);
+            ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow_blue);
         });
         findViewById(R.id.buttonMayus).setOnLongClickListener(v -> {
             findViewById(R.id.tableMinus).setVisibility(View.VISIBLE);
             findViewById(R.id.tableMayus).setVisibility(View.INVISIBLE);
+            ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow);
             return true;
         });
         findViewById(R.id.erase).setOnClickListener(v -> {

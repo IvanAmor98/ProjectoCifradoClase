@@ -23,8 +23,8 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonq"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -34,94 +34,94 @@
                 android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonw"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="w" />
+                android:text="w"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttone"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="e" />
+                android:text="e"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonr"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="r" />
+                android:text="r"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttont"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="t" />
+                android:text="t"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttony"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="y" />
+                android:text="y"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonu"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="u" />
+                android:text="u"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttoni"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="i" />
+                android:text="i"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttono"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="o" />
+                android:text="o"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonp"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="p" />
+                android:text="p"
+                android:textAllCaps="false" />
         </TableRow>
 
         <TableRow
@@ -130,104 +130,104 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttona"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="a" />
+                android:text="a"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttons"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="s" />
+                android:text="s"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttond"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="d" />
+                android:text="d"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonf"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="f" />
+                android:text="f"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttong"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="g" />
+                android:text="g"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonh"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="h" />
+                android:text="h"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonj"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="j" />
+                android:text="j"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonk"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="k" />
+                android:text="k"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonl"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="l" />
+                android:text="l"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonñ"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="6"
-                android:textAllCaps="false"
-                android:text="ñ" />
+                android:text="ñ"
+                android:textAllCaps="false" />
         </TableRow>
 
         <TableRow
@@ -236,8 +236,8 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonz"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -245,58 +245,58 @@
                 android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonx"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="x" />
+                android:text="x"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonc"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="c" />
+                android:text="c"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonv"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="v" />
+                android:text="v"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonb"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="b" />
+                android:text="b"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonn"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="n" />
+                android:text="n"
+                android:textAllCaps="false" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonm"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAllCaps="false"
-                android:text="m" />
+                android:text="m"
+                android:textAllCaps="false" />
 
         </TableRow>
 
@@ -560,22 +560,13 @@
 
     </TableLayout>
 
-    <Button
-        android:id="@+id/buttonMayus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Mayusculas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableMayus" />
 
     <Button
         android:id="@+id/Submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
         android:text="Cifrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -588,7 +579,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableMayus" />
 
@@ -620,11 +610,26 @@
         android:id="@+id/erase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Borrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Submit" />
+        app:layout_constraintTop_toBottomOf="@+id/tableMinus" />
+
+    <ImageButton
+        android:id="@+id/buttonMayus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:maxWidth="50dp"
+        android:maxHeight="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableMayus"
+        app:srcCompat="@drawable/arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
