@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:id="@+id/tableMinus"
+        android:id="@+id/tableLowerCase"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:visibility="visible"
@@ -302,18 +302,8 @@
 
     </TableLayout>
 
-    <TextView
-        android:id="@+id/input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:hint="Texto introducido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TableLayout
-        android:id="@+id/tableMayus"
+        android:id="@+id/tableUpperCase"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:visibility="invisible"
@@ -329,80 +319,80 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonQ"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Q" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonW"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="W" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonE"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="E" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonR"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="R" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonT"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="T" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonY"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Y" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonU"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="U" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonI"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="I" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonO"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="O" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonP"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -415,80 +405,80 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonA"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="A" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonS"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="s" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonD"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="D" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonF"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="F" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonG"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="G" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonH"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="H" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonJ"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="J" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonK"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="K" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonL"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="L" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonÑ"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -501,56 +491,56 @@
             android:layout_height="match_parent">
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonZ"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Z" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonX"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="X" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonC"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonV"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="V" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonB"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="B" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonN"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="N" />
 
             <Button
-                style="?buttonBarButtonStyle"
                 android:id="@+id/buttonM"
+                style="?buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -560,27 +550,15 @@
 
     </TableLayout>
 
-
-    <Button
-        android:id="@+id/Submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:maxHeight="20dp"
-        android:text="Cifrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableMayus" />
-
     <TextView
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableMayus" />
+        app:layout_constraintTop_toBottomOf="@+id/decrypt" />
 
     <TextView
         android:id="@+id/labelCryptOption"
@@ -615,7 +593,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableMinus" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLowerCase" />
 
     <ImageButton
         android:id="@+id/buttonMayus"
@@ -629,7 +607,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableMayus"
+        app:layout_constraintTop_toBottomOf="@+id/tableUpperCase"
         app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Texto introducido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Cifrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableUpperCase" />
+
+    <Button
+        android:id="@+id/decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Descifrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encrypt" />
+
+    <TextView
+        android:id="@+id/outputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decrypt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

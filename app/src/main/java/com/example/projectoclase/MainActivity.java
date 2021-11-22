@@ -3,67 +3,107 @@ package com.example.projectoclase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    boolean fixedUpperCase = false;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(getApplicationContext(),"Ha pulsado settings", Toast.LENGTH_SHORT).show();
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setButtonListener(findViewById(R.id.tableMayus));
-        setButtonListener(findViewById(R.id.tableMinus));
 
-        findViewById(R.id.Submit).setOnClickListener(v -> encrypt());
+        // Set keyboard buttons listener
+        setButtonListener(findViewById(R.id.tableUpperCase));
+        setButtonListener(findViewById(R.id.tableLowerCase));
+
+        findViewById(R.id.encrypt).setOnClickListener(v -> encrypt(true));
+        findViewById(R.id.decrypt).setOnClickListener(v -> encrypt(false));
+
         findViewById(R.id.buttonMayus).setOnClickListener(v -> {
-            findViewById(R.id.tableMinus).setVisibility(View.INVISIBLE);
-            findViewById(R.id.tableMayus).setVisibility(View.VISIBLE);
-            ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow_blue);
+            if (fixedUpperCase) {
+                findViewById(R.id.tableLowerCase).setVisibility(View.VISIBLE);
+                findViewById(R.id.tableUpperCase).setVisibility(View.INVISIBLE);
+                ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow);
+            } else {
+                findViewById(R.id.tableLowerCase).setVisibility(View.INVISIBLE);
+                findViewById(R.id.tableUpperCase).setVisibility(View.VISIBLE);
+                ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow_blue);
+            }
+            fixedUpperCase = false;
         });
+
         findViewById(R.id.buttonMayus).setOnLongClickListener(v -> {
-            findViewById(R.id.tableMinus).setVisibility(View.VISIBLE);
-            findViewById(R.id.tableMayus).setVisibility(View.INVISIBLE);
-            ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow);
+            findViewById(R.id.tableLowerCase).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tableUpperCase).setVisibility(View.VISIBLE);
+            ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource (R.drawable.arrow_blue);
+            fixedUpperCase = true;
             return true;
         });
+
         findViewById(R.id.erase).setOnClickListener(v -> {
             TextView input = findViewById(R.id.input);
             CharSequence value = input.getText();
             value = value.subSequence(0, value.length() - 1);
             input.setText(value);
         });
+
         findViewById(R.id.erase).setOnLongClickListener(v -> {
             ((TextView)findViewById(R.id.input)).setText("");
             return true;
         });
     }
 
-    private void encrypt() {
-        char[] minus = "abcdefghijklmnñopqrstuvwxyz".toCharArray();
-        char[] mayus = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".toCharArray();
+    private void encrypt(boolean crypt) {
+        char[] lowerCase = getResources().getString(R.string.lowerCase).toCharArray();
+        char[] upperCase = getResources().getString(R.string.upperCase).toCharArray();
         String input = (String) ((TextView) findViewById(R.id.input)).getText();
         String output = "";
         int cryptKey = Integer.parseInt(((Spinner) findViewById(R.id.encryptOption)).getSelectedItem().toString());
         for (char c: input.toCharArray()) {
             if (c <= 90 || c == 165) {
-                output += getChar(mayus, c ,cryptKey);
+                output += getChar(upperCase, c ,cryptKey, crypt);
             } else {
-                output += getChar(minus, c ,cryptKey);
+                output += getChar(lowerCase, c ,cryptKey, crypt);
             }
         }
         ((TextView) findViewById(R.id.output)).setText(output);
     }
 
-    private char getChar(char[] chars, char c, int cryptKey) {
+    private char getChar(char[] chars, char c, int cryptKey, boolean crypt) {
         for (int i = 0; i < chars.length; i++) {
             if (c == chars[i]) {
-                int index = i + cryptKey >= chars.length ? i + cryptKey - chars.length : i + cryptKey;
-                return (char) (chars[index]);
+                int index = 0;
+                if (crypt) {
+                    index = i + cryptKey >= chars.length ? i + cryptKey - chars.length : i + cryptKey;
+                } else {
+                    index = i - cryptKey < 0 ? i - cryptKey + chars.length : i - cryptKey;
+                }
+                return chars[index];
             }
         }
         return ' ';
@@ -77,7 +117,15 @@ public class MainActivity extends AppCompatActivity {
                     TextView textView = findViewById(R.id.input);
                     String output = textView.getText() + ((String) ((TextView) findViewById(v.getId())).getText());
                     textView.setText(output);
+                    if (!fixedUpperCase)
+                        swapKeyboards();
                 });
         }
+    }
+
+    private void swapKeyboards() {
+        findViewById(R.id.tableLowerCase).setVisibility(View.VISIBLE);
+        findViewById(R.id.tableUpperCase).setVisibility(View.INVISIBLE);
+        ((ImageButton)findViewById(R.id.buttonMayus)).setImageResource(R.drawable.arrow);
     }
 }
